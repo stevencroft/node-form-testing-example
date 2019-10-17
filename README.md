@@ -1,5 +1,5 @@
 # Optimizely Full Stack Form Testing Example
-A node.js instance with Express, Handlebars, and Optimizely Full Stack middleware.
+A node.js instance with Express, Handlebars, and Optimizely Full Stack middleware. Form validation is currently front-end only. This project currently doesn't have any sort of back-end for storing form submissions. POSTs are not handled.
 
 # To use
 Clone this repo and run npm install. Replace the SDK key in index.js (top level directory) with your own SDK Key.
