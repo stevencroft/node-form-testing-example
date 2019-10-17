@@ -1,0 +1,8 @@
+#ignore node_modules dir
+node_modules
+
+#ignore package-lock.json
+package-lock.json
+
+#ignore .DS_Store
+.DS_Store

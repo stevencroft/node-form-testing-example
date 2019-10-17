@@ -1,0 +1,38 @@
+<h1>{{title}}</h1>
+{{#if enabled}}
+<form>
+  {{#if name_on}}
+    <label for="name">Name<small>{{#if name_required}} (required){{/if}}</small></label>
+    <input type="text" id="name" placeholder="name" {{#if name_required}}required{{/if}}>
+  {{/if}}
+  {{#if email_on}}
+    <label for="email">Email <small>{{#if email_required}}(required){{/if}}</small></label>
+    <input type="email" id="email" placeholder="email address" {{#if email_required}}required{{/if}}>
+  {{/if}}
+  {{#if phone_on}}
+    <label for="phone">Phone Number <small>{{#if phone_required}}(required){{/if}}</small></label>
+    <input type="tel" id="phone" placeholder="phone number" {{#if phone_required}}required{{/if}}>
+  {{/if}}
+  {{#if address_on}}
+    <label for="address">Address <small>{{#if address_required}}(required){{/if}}</small></label>
+    <input type="text" id="address" placeholder="address" {{#if address_required}}required{{/if}}>
+  {{/if}}
+  {{#if zip_code_on}}
+    <label for="zip">Zip Code <small>{{#if zip_code_required}}(required){{/if}}</small></label>
+    <input type="number" id="zip" placeholder="zip code" {{#if zip_code_required}}required{{/if}}>
+  {{/if}}
+  <input type="submit" value="{{button_text}}">
+</form>
+{{/if}}
+
+<style>
+  input {
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  }
+
+  label {
+    margin-left: 5px;
+  }
+</style>
